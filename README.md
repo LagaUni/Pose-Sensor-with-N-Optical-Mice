@@ -3,7 +3,8 @@ Design of an optical pose sensor based on sensor fusion of N optical mice sensor
 ## Requirements
 * Arduino IDE
 * Ubuntu Linux
-* Python 3.12.2 
+* Python 3.12.2
+* ROS 2 Humble
 ## References
 [1]: https://github.com/VineetSukhthanker/FCT3065-XY_MouseSensor
 1. https://github.com/VineetSukhthanker/FCT3065-XY_MouseSensor
