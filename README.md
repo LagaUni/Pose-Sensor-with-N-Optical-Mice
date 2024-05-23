@@ -7,6 +7,8 @@ Each sensor must be connected as indicated:
 * all GND must be connected between them
 
 Additionally, in this work the location of the sensors is triangular but their orientations are all the same as the robot´s coordinate frame. This is important to determine and change the distance D between the 2 sensors located over the rotation axis and the distance L from this axis to sensor #3. 
+
+
 ## Requirements
 * Arduino IDE
 * Ubuntu Linux
@@ -15,6 +17,7 @@ Additionally, in this work the location of the sensors is triangular but their o
 
 ## Instructions to run ROS 2 node
 ## Outstanding issues 
+
 ## References
 [1]: https://github.com/VineetSukhthanker/FCT3065-XY_MouseSensor
 1. https://github.com/VineetSukhthanker/FCT3065-XY_MouseSensor
