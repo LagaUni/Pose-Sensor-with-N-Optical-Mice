@@ -6,7 +6,7 @@ Each sensor must be connected as indicated:
 * SSIO (data pin) and SCLK to (clock pin) to PWM pairs or communication pins
 * all GND must be connected between them
 
-Additionally, in this work the location of the sensors is triangular but their orientations are all the same as the robot´s coordinate frame. This is important to determine and change the distance D between the 2 sensors located over the rotation axis and the distance L from this axis to sensor #3. 
+Additionally, in this work the location of the sensors is triangular but their orientations are all the same as the robot´s coordinate frame. This is important to determine and change the distance D between the 2 sensors located over the rotation axis and the distance L from this axis to sensor #3. The position given from the sensors data is in mm. 
 
 
 ## Requirements
@@ -15,7 +15,10 @@ Additionally, in this work the location of the sensors is triangular but their o
 * Python 3.12.2
 * ROS 2 Humble
 
-## Instructions to run ROS 2 node
+## Instructions to run Arduino and ROS 2 node
+After your connections and geometry are fixed, start by running the Arduino code for 2 or 3 sensors and make sure you are obtaining readings from all of them and that they are being delivered in real time simultaneously. Then, close the Serial Monitor but do not close the Arduino program.
+Execute Windows PowerShell as administrator and make sure your Arduino MEGA or microcontroller is connected by writing the command `usbipd list`
+
 ## Outstanding issues 
 
 ## References
