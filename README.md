@@ -33,7 +33,7 @@ Additionally, in this work the location of the sensors is triangular but their o
 
 4. Once you make all the adjustments to these codes, proceed to run the complete program. Start by opening a terminal and checking you are in the correct path by typing `cd workspace/` (if you do not have ROS 2 automatically icialized on terminal, type `source /opt/ros/humble/setup.bash`), then check the Arduino direction and connection with `lsusb` and `ls /dev/ttyA*` and make changes if necessary in the line `self.arduino = serial.Serial('/dev/ttyACM0', Baud Rate)`. To compile use `colcon build` followed by `source install/setup.bash`and `ros2 launch sensor test_launch.py` to open RViz 2 visualization tool.
    
-5. Finally  
+5. Finally, open the file in RViz by selecting 'Recent Configs' and selecting the path of your workspace folder. You will automatically see the interface with the robot and mice simulation with coordinate frames that will move accordingly to your real robot's movement as long as everything is okay and the terminal does not report any error. To end the process, go back to the terminal and press `CTRL + C`. Make sure to delete or save and move the generated .txt files elsewhere from the workspace folder before making another measurement test or else, they will overwrite.
 
    
 ## Outstanding issues 
