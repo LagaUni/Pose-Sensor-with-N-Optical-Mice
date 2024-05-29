@@ -17,7 +17,7 @@ Additionally, in this work the location of the sensors is triangular but their o
 * Arduino IDE
 * Ubuntu Linux
 * Python 3.12.2
-* ROS 2 Humble
+* ROS 2 Humble with turtlesim package
 
 ## Instructions to run Arduino and Python-ROS 2 node
 After your connections and geometry are fixed, start by running the Arduino code for 2 or 3 sensors and make sure you are obtaining readings from all of them and that they are being delivered in real time simultaneously. Then, close the Serial Monitor but do not close the Arduino program.
@@ -26,7 +26,7 @@ Execute Windows PowerShell as administrator and make sure your Arduino MEGA or m
  
 If using Visual Studio Code for the Python block, open the remote window for WSL Ubuntu (search for more documentation and tutorials about this after installing Ubuntu Linux and ROS 2 if needed) and open the folder of the `workspace.zip` (make sure this folder is previously in your home folder from Ubuntu). Let´s review the files in this folder briefly:
 
-* In `workspace` you will find a `src` folder which will be the main editable. Other folders called `build`, `install` and `log` will be created automatically once you run the whole program.
+** In `workspace` you will find a `src` folder which will be the main editable. Other folders called `build`, `install` and `log` will be created automatically once you run the whole program.
 * In `src` you will also find a folder called `sensor` which contains other automatically generated files, the `setup
 
 ## Outstanding issues 
