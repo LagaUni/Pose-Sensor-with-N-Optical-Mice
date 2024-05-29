@@ -31,6 +31,11 @@ Additionally, in this work the location of the sensors is triangular but their o
 * `pose_publisher.py` is the main data processing node including the mathematical model to calculate de pose (make the changes in distances D and number of sensors for your configuration again).
 * `odom_puplish.py`and `tf_static.py` will use the message of the pose (after transforming the angle to quatrnion form) to publish the change of pose incrementally or to 'draw' the trajectory and the static transformations or geometric links between sensors respectively.
 
+4. Once you make all the adjustments to these codes, proceed to run the complete program. Start by opening a terminal and checking you are in the correct path by typing `cd workspace/` (if you do not have ROS 2 automatically icialized on terminal, type `source /opt/ros/humble/setup.bash`), then check the Arduino direction and connection with `lsusb` and `ls /dev/ttyA*` and make changes if necessary in the line `self.arduino = serial.Serial('/dev/ttyACM0', Baud Rate)`. To compile use `colcon build` followed by `source install/setup.bash`and `ros2 launch sensor test_launch.py` to open RViz 2 visualization tool.
+   
+5. Finally  
+
+   
 ## Outstanding issues 
 
 ## References
