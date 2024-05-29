@@ -20,7 +20,7 @@ Additionally, in this work the location of the sensors is triangular but their o
 * ROS 2 Humble with turtlesim package
 
 ## Instructions to run Arduino and Python-ROS 2 node
-1. After your connections and geometry are fixed, start by running the Arduino code for 2 or 3 sensors and make sure you are obtaining readings from all of them and that they are being delivered in real time simultaneously. Then, close the Serial Monitor but do not close the Arduino program. Also check for your specific sensors, that the signs are correct, meaning increasing numbers when going forward and to the right and decreasing when going backwards and to the left.
+1. After your connections and geometry are fixed, start by running the Arduino code for 2 or 3 sensors and make sure you are obtaining readings from all of them and that they are being delivered in real time simultaneously. Also check for your specific sensors, that the signs are correct, meaning increasing numbers when going forward and to the right and decreasing when going backwards and to the left. Then, close the Serial Monitor but do not close the Arduino program. 
 
 2. Execute Windows PowerShell as administrator and make sure your Arduino MEGA or microcontroller is connected by writing the command `usbipd list` and watch the port busid #-# were is being read, then to connect the device to WSL Ubuntu run `usbipd bind --busid=1-1` followed by `usbipd attach --wsl --busid=1-1`.
  
