@@ -41,7 +41,7 @@ NOTE: For further explanation on the model or anything related to our specific p
 * Arduino codes may present errors if all te sensors are not connected AND reading at all times. Future work would need to focus on organising the frequency of delivery of mice's data to be all the same and reporting on the Serial Monitor in an interspersed way, meaning always data from sensor 1, then 2 and then 3 without exception.
 * Take into account that the sensors do not work an all surfaces and could introduce great error if these are not tested beforehand.
 * An alarm sign to identify when there's a wrong reading of one of the sensors or the surface is not appropriate is when in the RViz interface, you perform a straight line alongside -y- axis and the model collapses by showing an immediate great curvature (tending to a circle trajectory) or when the robot simulation does not apper immediatly after opening 'Recent Configs'.
-* Other issues and results from this implementation are also found on the article.
+* Other issues regarding drift error from angle rotation over 90° and other results from this implementation are also found on the article mentioned above.
 
 ## References
 [1]: https://github.com/VineetSukhthanker/FCT3065-XY_MouseSensor
