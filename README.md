@@ -27,8 +27,7 @@ Execute Windows PowerShell as administrator and make sure your Arduino MEGA or m
 If using Visual Studio Code for the Python block, open the remote window for WSL Ubuntu (search for more documentation and tutorials about this after installing Ubuntu Linux and ROS 2 if needed) and open the folder of the `workspace.zip` (make sure this folder is previously in your home folder from Ubuntu). Let´s review the files in this folder briefly:
 
 * In `workspace` you will find a `src` folder which will be the main editable. Other folders called `build`, `install` and `log` will be created automatically once you run the whole program.
-* In `src` you will also find a folder called `sensor` which contains other automatically generated files, the editable `setup.py`, the `test_launch.py` file which allows to execute various nodes simultaneously and were you will need to edit the arguments for your 'static_transform_publisher' nodes depending on your specific configuration and mouse locations and initial orientations. And finally another snesor folder with all the other main files:
-      * 
+* In `src` you will also find a folder called `sensor` which contains other automatically generated files, the editable `setup.py`, the `test_launch.py` file which allows to execute various nodes simultaneously and were you will need to edit the arguments for your 'static_transform_publisher' nodes depending on your specific configuration and mouse locations and initial orientations. And finally another snesor folder with all the other main files: `odom_puplish.py`, `pose_publisher
 
 ## Outstanding issues 
 
