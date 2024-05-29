@@ -17,7 +17,8 @@ Additionally, in this work the location of the sensors is triangular but their o
 
 ## Instructions to run Arduino and ROS 2 node
 After your connections and geometry are fixed, start by running the Arduino code for 2 or 3 sensors and make sure you are obtaining readings from all of them and that they are being delivered in real time simultaneously. Then, close the Serial Monitor but do not close the Arduino program.
-Execute Windows PowerShell as administrator and make sure your Arduino MEGA or microcontroller is connected by writing the command `usbipd list`
+Execute Windows PowerShell as administrator and make sure your Arduino MEGA or microcontroller is connected by writing the command `usbipd list` and watch the port busid #-# were is being read, then to connect the device to Ubuntu run `usbipd bind --busid=1-1` followed by `usbipd attach --wsl --busid=1-1`.
+If using Visual Studio Code for the Python block, open the remote window for WSL Ubuntu (search for more documentation and tutorials about this after installing Ubuntu Linux and ROS 2 if needed) and open the file of the workspace.zip. 
 
 ## Outstanding issues 
 
