@@ -20,7 +20,7 @@ Additionally, in this work the location of the sensors is triangular but their o
 * ROS 2 Humble with turtlesim package
 
 ## Instructions to run Arduino and Python-ROS 2 node
-1. After your connections and geometry are fixed, start by running the Arduino code for 2 or 3 sensors and make sure you are obtaining readings from all of them and that they are being delivered in real time simultaneously. Then, close the Serial Monitor but do not close the Arduino program.
+1. After your connections and geometry are fixed, start by running the Arduino code for 2 or 3 sensors and make sure you are obtaining readings from all of them and that they are being delivered in real time simultaneously. Then, close the Serial Monitor but do not close the Arduino program. Also check for your specific sensors, that the signs are correct, meaning increasing numbers when going forward and to the right and decreasing when going backwards and to the left.
 
 2. Execute Windows PowerShell as administrator and make sure your Arduino MEGA or microcontroller is connected by writing the command `usbipd list` and watch the port busid #-# were is being read, then to connect the device to WSL Ubuntu run `usbipd bind --busid=1-1` followed by `usbipd attach --wsl --busid=1-1`.
  
@@ -35,8 +35,13 @@ Additionally, in this work the location of the sensors is triangular but their o
    
 5. Finally, open the file in RViz by selecting 'Recent Configs' and selecting the path of your workspace folder. You will automatically see the interface with the robot and mice simulation with coordinate frames that will move accordingly to your real robot's movement as long as everything is okay and the terminal does not report any error. To end the process, go back to the terminal and press `CTRL + C`. Make sure to delete or save and move the generated .txt files elsewhere from the workspace folder before making another measurement test or else, they will overwrite.
 
-   
-## Outstanding issues 
+NOTE: For further explanation on the model or anything related to our specific project, check `InformeFinalPA1_LPR_Article.pdf` on this repository.
+
+## Present issues to overcome 
+* Arduino codes may present errors if all te sensors are not connected AND reading at all times. Future work would need to focus on organising the frequency of delivery of mice's data to be all the same and reporting on the Serial Monitor in an interspersed way, meaning always data from sensor 1, then 2 and then 3 without exception.
+* Take into account that the sensors do not work an all surfaces and could introduce great error if these are not tested beforehand.
+* An alarm sign to identify when there's a wrong reading of one of the sensors or the surface is not appropriate is when in the RViz interface, you perform a straight line alongside -y- axis and the model collapses by showing an immediate great curvature (tending to a circle trajectory) or when the robot simulation does not apper immediatly after opening 'Recent Configs'.
+* Other issues and results from this implementation are also found on the article.
 
 ## References
 [1]: https://github.com/VineetSukhthanker/FCT3065-XY_MouseSensor
