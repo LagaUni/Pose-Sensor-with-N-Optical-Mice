@@ -1,5 +1,9 @@
 # Pose-Sensor-with-N-Optical-Mice
 Design of an optical pose sensor based on sensor fusion of N optical mice sensors (FCT3065-XY model from Bluetooth mice) to estimate the pose and real time odometry of an autonomous differential drive robot. Communication protocol with the sensors via bit banging in Arduino [[1]], design of data processing code in Python and display interface using a URDF node model in ROS2 for a final visualization in RViz2. 
+
+Autors: Laura Patiño Restrepo, Physics Engineering undergraduate student at EAFIT University, Colombia, lpatinor@eafit.edu.co
+& Davinson Castaño Cano, professor at EAFIT University, Colombia, dcasta25@eafit.edu.co
+        
 ## Connections and geometry 
 Each sensor must be connected as indicated:
 * VDD to 3.3 V of Arduino
@@ -23,7 +27,7 @@ Execute Windows PowerShell as administrator and make sure your Arduino MEGA or m
 If using Visual Studio Code for the Python block, open the remote window for WSL Ubuntu (search for more documentation and tutorials about this after installing Ubuntu Linux and ROS 2 if needed) and open the folder of the `workspace.zip` (make sure this folder is previously in your home folder from Ubuntu). Let´s review the files in this folder briefly:
 
 * In `workspace` you will find a `src` folder which will be the main editable. Other folders called `build`, `install` and `log` will be created automatically once you run the whole program.
-* 
+* In `src` you will also find a folder called `sensor` which contains other automatically generated files, the `setup
 
 ## Outstanding issues 
 
