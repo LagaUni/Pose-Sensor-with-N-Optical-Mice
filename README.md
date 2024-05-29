@@ -22,8 +22,8 @@ Execute Windows PowerShell as administrator and make sure your Arduino MEGA or m
  
 If using Visual Studio Code for the Python block, open the remote window for WSL Ubuntu (search for more documentation and tutorials about this after installing Ubuntu Linux and ROS 2 if needed) and open the folder of the `workspace.zip` (make sure this folder is previously in your home folder from Ubuntu). Let´s review the files in this folder briefly:
 
-*In `workspace` you will find a `src` folder which will be the main editable. Other folders called `build`, `install` and `log` will be created automatically once you run the whole program.
-*
+* In `workspace` you will find a `src` folder which will be the main editable. Other folders called `build`, `install` and `log` will be created automatically once you run the whole program.
+* 
 
 ## Outstanding issues 
 
