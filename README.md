@@ -48,5 +48,5 @@ NOTE: For further explanation on the model or anything related to our specific p
 1. https://github.com/VineetSukhthanker/FCT3065-XY_MouseSensor
    
 [2]: https://youtu.be/k_dIStU6iac
-3. https://youtu.be/k_dIStU6iac
+2. https://youtu.be/k_dIStU6iac
    
