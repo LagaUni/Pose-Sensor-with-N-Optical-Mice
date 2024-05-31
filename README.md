@@ -35,7 +35,7 @@ Additionally, in this work the location of the sensors is triangular but their o
    
 5. Finally, open the file in RViz by selecting 'Recent Configs' and selecting the path of your workspace folder. You will automatically see the interface with the robot and mice simulation with coordinate frames that will move accordingly to your real robot's movement as long as everything is okay and the terminal does not report any error. To end the process, go back to the terminal and press `CTRL + C`. Make sure to delete or save and move the generated .txt files elsewhere from the workspace folder before making another measurement test or else, they will overwrite.
 
-NOTE: For further explanation on the model or anything related to our specific project, check `InformeFinalPA1_LPR_Article.pdf` on this repository or check the video of this project in [[2]] (spanish version).
+NOTE: For further explanation on the model or anything related to our specific project, check `InformeFinalPA1_LPR_Article.pdf` on this repository or check the video of this project in [2] (spanish version).
 
 ## Present issues to overcome 
 * Arduino codes may present errors if all te sensors are not connected AND reading at all times. Future work would need to focus on organising the frequency of delivery of mice's data to be all the same and reporting on the Serial Monitor in an interspersed way, meaning always data from sensor 1, then 2 and then 3 without exception.
@@ -46,6 +46,5 @@ NOTE: For further explanation on the model or anything related to our specific p
 ## References
 [1]: https://github.com/VineetSukhthanker/FCT3065-XY_MouseSensor
 1. https://github.com/VineetSukhthanker/FCT3065-XY_MouseSensor
-[2]: https://youtu.be/k_dIStU6iac
 2. https://youtu.be/k_dIStU6iac
    
